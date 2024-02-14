@@ -1,7 +1,10 @@
 import express, {Request, Response} from 'express';
 import {getAllBooks} from './books/bookService';
+import * as database from './database';
 const app = express()
 const port = process.env.PORT;
+
+database.connect();
 
 app.get('/', (_: Request, res: Response) => {
   res.send('Healthy.')

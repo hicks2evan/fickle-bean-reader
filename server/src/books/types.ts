@@ -1,9 +1,4 @@
-type Book = {
+interface Book {
     title: string,
-    pages: Page[]
-}
-
-type Page = {
-    number: number,
-    imageUrl: string
+    pages: string[]
 }
