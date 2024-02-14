@@ -1,9 +1,18 @@
 import express, {Request, Response} from 'express';
+import {getAllBooks} from './books/bookService';
 const app = express()
 const port = process.env.PORT;
 
 app.get('/', (_: Request, res: Response) => {
-  res.send('Hello, Heroku?')
+  res.send('Healthy')
+})
+
+app.get('/books', async (_: Request, res: Response) => {
+  const books = await getAllBooks();
+
+  if(books) {
+    res.send(books);
+  }
 })
 
 app.listen(port, () => {
