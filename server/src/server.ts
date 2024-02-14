@@ -4,7 +4,7 @@ const app = express()
 const port = process.env.PORT;
 
 app.get('/', (_: Request, res: Response) => {
-  res.send('Healthy')
+  res.send('Healthy.')
 })
 
 app.get('/books', async (_: Request, res: Response) => {
