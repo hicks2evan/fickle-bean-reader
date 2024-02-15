@@ -22,8 +22,16 @@ jobs:
         working-directory: ./server
   test:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        mongodb-version: ['4.4.14']
     steps:
-      - uses: actions/checkout@v4
+      - name: Git checkout
+        uses: actions/checkout@v4
+
+      - name: Start MongoDB
+        uses: MongoCamp/mongodb-github-action@1.2.0
+
       - name: Run jest tests
         uses: actions/setup-node@v3
         with:
