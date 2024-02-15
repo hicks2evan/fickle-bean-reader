@@ -11,13 +11,17 @@ jobs:
   build: 
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Run build Node.js
+      - name: Git checkout
+        uses: actions/checkout@v4
+        
+      - name: Setup Node
         uses: actions/setup-node@v3
         with:
           node-version: '20.x'
+
       - run: npm install
         working-directory: ./server
+
       - run: npm run build
         working-directory: ./server
   test:
@@ -32,12 +36,14 @@ jobs:
       - name: Start MongoDB
         uses: MongoCamp/mongodb-github-action@1.2.0
 
-      - name: Run jest tests
+      - name: Setup Node
         uses: actions/setup-node@v3
         with:
           node-version: '20.x'
+
       - run: npm install
         working-directory: ./server
+
       - run: npm run test
         working-directory: ./server
   deploy:
