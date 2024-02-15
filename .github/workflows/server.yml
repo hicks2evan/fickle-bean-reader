@@ -57,4 +57,6 @@ jobs:
           heroku_app_name: "fickle-bean-reader-api" #Must be unique in Heroku
           heroku_email: "hicks2evan@gmail.com"
           appdir: "server"
-          procfile: "web: DATABASE_CONNECTION_URI_PROD=${{secrets.DATABASE_CONNECTION_URI_PROD}} npm start"
+          procfile: "web: npm start"
+        env:
+          DATABASE_CONNECTION_URI_PROD: ${{secrets.DATABASE_CONNECTION_URI_PROD}}
