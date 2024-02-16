@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export default async function BooksPage() {
-  const response = await fetch("http://localhost:3001/books");
+  const response = await fetch(`${process.env.NEXT_PUBLIC_SERVER_BASE_URL}/books`);
   const books: Book[] = await response.json();
 
   return (
