@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: Git checkout
         uses: actions/checkout@v4
-        
+
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
@@ -59,4 +59,4 @@ jobs:
           appdir: "server"
           procfile: "web: npm start"
         env:
-          DATABASE_CONNECTION_URI_PROD: ${{secrets.DATABASE_CONNECTION_URI_PROD}}
+          HD_DATABASE_CONNECTION_URI_PROD: ${{secrets.DATABASE_CONNECTION_URI_PROD}}
