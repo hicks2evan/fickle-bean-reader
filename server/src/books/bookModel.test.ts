@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import { getAllBooks } from "./bookModel";
+import { findBooks } from "./bookModel";
 import * as database from '../database';
 
 beforeAll(() => {
@@ -8,9 +8,9 @@ beforeAll(() => {
 
 describe("bookModel", () => {
   it("finds all books", async () => {
-    const result = await getAllBooks();
-    //expect(result.length).toBeGreaterThan(0);
-    //expect(result[0].title).toBeTruthy();
+    const result = await findBooks();
+    expect(result.length).toBeGreaterThan(0);
+    expect(result[0].title).toBeTruthy();
   });
 });
 

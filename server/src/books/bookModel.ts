@@ -7,6 +7,6 @@ const bookSchema = new Schema<Book>({
 
 export const bookModel = model<Book>('Book', bookSchema);
 
-export const getAllBooks = async function(): Promise<Book[]> {
+export const findBooks = async function(): Promise<Book[]> {
     return await bookModel.find();
 }
