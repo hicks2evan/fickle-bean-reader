@@ -1,5 +1,5 @@
 import express, {Request, Response} from 'express';
-import {getAllBooks} from './books/bookService';
+import {getAllBooks, getBookByTitle} from './books/bookService';
 import * as database from './database';
 const app = express()
 const port = process.env.PORT;
@@ -15,6 +15,14 @@ app.get('/books', async (_: Request, res: Response) => {
 
   if(books) {
     res.send(books);
+  }
+})
+
+app.get('/books/:title', async (req: Request, res: Response) => {
+  const book = await getBookByTitle(req.params.title as string);
+
+  if(book) {
+    res.send(book);
   }
 })
 

@@ -10,3 +10,7 @@ export const bookModel = model<Book>('Book', bookSchema);
 export const findBooks = async function(): Promise<Book[]> {
     return await bookModel.find();
 }
+
+export const findBookByTitle = async function(title: string): Promise<Book | null> {
+    return bookModel.findOne({title});
+}
