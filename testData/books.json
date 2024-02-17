@@ -1,6 +1,65 @@
 [{
-  "title": "test",
+  "_id": {
+    "$oid": "65d02ff1c24731532dc2771f"
+  },
+  "title": "Fickle Bean No. 1",
   "pages": [
-    "test.png"
+    "https://ficklebean.s3.us-west-1.amazonaws.com/FICKLE_BEAN_1_1.jpg",
+    "https://ficklebean.s3.us-west-1.amazonaws.com/FICKLE_BEAN_1_2.jpg",
+    "https://ficklebean.s3.us-west-1.amazonaws.com/FICKLE_BEAN_1_3.jpg",
+    "https://ficklebean.s3.us-west-1.amazonaws.com/FICKLE_BEAN_1_4.jpg",
+    "https://ficklebean.s3.us-west-1.amazonaws.com/FICKLE_BEAN_1_5.jpg",
+    "https://ficklebean.s3.us-west-1.amazonaws.com/FICKLE_BEAN_1_6.jpg",
+    "https://ficklebean.s3.us-west-1.amazonaws.com/FICKLE_BEAN_1_7.jpg",
+    "https://ficklebean.s3.us-west-1.amazonaws.com/FICKLE_BEAN_1_8.jpg",
+    "https://ficklebean.s3.us-west-1.amazonaws.com/FICKLE_BEAN_1_9.jpg"
+  ]
+},
+{
+  "_id": {
+    "$oid": "65d03061c24731532dc27720"
+  },
+  "title": "Fickle Bean No. 2",
+  "pages": [
+    "https://ficklebean.s3.us-west-1.amazonaws.com/FICKLE_BEAN_2_1.jpg",
+    "https://ficklebean.s3.us-west-1.amazonaws.com/FICKLE_BEAN_2_2.jpg",
+    "https://ficklebean.s3.us-west-1.amazonaws.com/FICKLE_BEAN_2_3.jpg",
+    "https://ficklebean.s3.us-west-1.amazonaws.com/FICKLE_BEAN_2_4.jpg",
+    "https://ficklebean.s3.us-west-1.amazonaws.com/FICKLE_BEAN_2_5.jpg",
+    "https://ficklebean.s3.us-west-1.amazonaws.com/FICKLE_BEAN_2_6.jpg",
+    "https://ficklebean.s3.us-west-1.amazonaws.com/FICKLE_BEAN_2_7.jpg",
+    "https://ficklebean.s3.us-west-1.amazonaws.com/FICKLE_BEAN_2_8.jpg",
+    "https://ficklebean.s3.us-west-1.amazonaws.com/FICKLE_BEAN_2_9.jpg",
+    "https://ficklebean.s3.us-west-1.amazonaws.com/FICKLE_BEAN_2_10.jpg",
+    "https://ficklebean.s3.us-west-1.amazonaws.com/FICKLE_BEAN_2_11.jpg",
+    "https://ficklebean.s3.us-west-1.amazonaws.com/FICKLE_BEAN_2_12.jpg",
+    "https://ficklebean.s3.us-west-1.amazonaws.com/FICKLE_BEAN_2_13.jpg",
+    "https://ficklebean.s3.us-west-1.amazonaws.com/FICKLE_BEAN_2_14.jpg",
+    "https://ficklebean.s3.us-west-1.amazonaws.com/FICKLE_BEAN_2_15.jpg",
+    "https://ficklebean.s3.us-west-1.amazonaws.com/FICKLE_BEAN_2_16.jpg",
+    "https://ficklebean.s3.us-west-1.amazonaws.com/FICKLE_BEAN_2_17.jpg",
+    "https://ficklebean.s3.us-west-1.amazonaws.com/FICKLE_BEAN_2_18.jpg",
+    "https://ficklebean.s3.us-west-1.amazonaws.com/FICKLE_BEAN_2_19.jpg",
+    "https://ficklebean.s3.us-west-1.amazonaws.com/FICKLE_BEAN_2_20.jpg",
+    "https://ficklebean.s3.us-west-1.amazonaws.com/FICKLE_BEAN_2_21.jpg",
+    "https://ficklebean.s3.us-west-1.amazonaws.com/FICKLE_BEAN_2_22.jpg",
+    "https://ficklebean.s3.us-west-1.amazonaws.com/FICKLE_BEAN_2_23.jpg"
+  ]
+},
+{
+  "_id": {
+    "$oid": "65d03174c24731532dc27722"
+  },
+  "title": "Fickle Bean Process Zine 1",
+  "pages": [
+    "      https://ficklebean.s3.us-west-1.amazonaws.com/PROCESS_ZINE_1_1.jpg",
+    "      https://ficklebean.s3.us-west-1.amazonaws.com/PROCESS_ZINE_1_2.jpg",
+    "      https://ficklebean.s3.us-west-1.amazonaws.com/PROCESS_ZINE_1_3.jpg",
+    "      https://ficklebean.s3.us-west-1.amazonaws.com/PROCESS_ZINE_1_4.jpg",
+    "      https://ficklebean.s3.us-west-1.amazonaws.com/PROCESS_ZINE_1_5.jpg",
+    "      https://ficklebean.s3.us-west-1.amazonaws.com/PROCESS_ZINE_1_6.jpg",
+    "      https://ficklebean.s3.us-west-1.amazonaws.com/PROCESS_ZINE_1_7.jpg",
+    "      https://ficklebean.s3.us-west-1.amazonaws.com/PROCESS_ZINE_1_8.jpg",
+    "      https://ficklebean.s3.us-west-1.amazonaws.com/PROCESS_ZINE_1_9.jpg"
   ]
 }]
